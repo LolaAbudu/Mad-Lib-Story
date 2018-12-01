@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Story_App_HW_ABUDU_OMOLOLA</string>
+
+    <string name="main_activity_first_question">What is your worse time of day?</string>
+    <string name="main_activity_button">Next</string>
+    <string name="main_activity_first_answer">First answer</string>
+
+    <string name="second_activity_second_question">What do you think about often?</string>
+    <string name="second_activity_button">Next</string>
+    <string name="second_activity_second_answer">Second Answer</string>
+
+    <string name="third_activity_third_question">What are things you find on the floor outside?</string>
+    <string name="third_activity_button">Next</string>
+    <string name="third_activity_third_answer">Third Answer</string>
+
+    <string name="forth_activity_forth_question">What are things you find in the sky?</string>
+    <string name="forth_activity_button">Next</string>
+    <string name="forth_activity_forth_answer">Forth Answer</string>
+
+    <string name="fifth_activity_fifth_question">What is something you press on?</string>
+    <string name="fifth_activity_button">Next</string>
+    <string name="fifth_activity_fifth_answer">Fifth Answer</string>
+
+    <string name="sixth_activity_sixth_question">What do you never have time to finish?</string>
+    <string name="sixth_activity_button">Next</string>
+    <string name="sixth_activity_sixth_answer">Sixth Answer</string>
+
+    <string name="seventh_activity_seventh_question">What do you enjoy talking about?</string>
+    <string name="seventh_activity_button">Next</string>
+    <string name="seventh_activity_seventh_answer">Seventh Answer</string>
+
+    <string name="eigth_activity_eigth_story">Eighth Story</string>
+    <string name="eigth_activity_button">Send</string>
+    <string name="eigth_activity_eigth_answer">abcd1234@gmail.com</string>
+    <string name="eigth_activity_email_story">Enter E-mail address below to send story to yourself or a friend.</string>
+
+    <string name="splashpage_imageview_contentDescription">Dreams</string>
+    <string name="splashpage_textview_text">Mad-Lib! What a Story!</string>
+
+</resources>

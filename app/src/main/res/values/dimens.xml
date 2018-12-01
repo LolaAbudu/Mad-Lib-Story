@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_view_textSize">30sp</dimen>
+
+    <dimen name="cardview_layout_marginStart_and_left">20dp</dimen>
+    <dimen name="cardview_layout_marginEnd_and_right">20dp</dimen>
+    <dimen name="cardview_layout_marginTop">148dp</dimen>
+
+    <dimen name="button_marginBottom">144dp</dimen>
+    <dimen name="button_layout_marginStart_and_left">36dp</dimen>
+    <dimen name="button_layout_marginEnd_and_right">8dp</dimen>
+
+    <dimen name="editText_marginBottom">144dp</dimen>
+    <dimen name="editText_layout_marginStart_and_left">8dp</dimen>
+    <dimen name="editText_layout_marginEnd_and_right">8dp</dimen>
+
+    <dimen name="textview_eighth_activity_marginTop">40dp</dimen>
+    <dimen name="textview_eighth_activity_textsize">20sp</dimen>
+    <dimen name="edittext_and_button_eighth_activity_marginBottom">40dp</dimen>
+    <dimen name="textview_eighth_activity_marginBottom">30dp</dimen>
+
+    <dimen name="scrollview_textview_eighth_activity_marginStart_and_left">8dp</dimen>
+    <dimen name="scrollview_textview_eighth_activity_marginTop">8dp</dimen>
+    <dimen name="scrollview_textview_eighth_activity_marginEnd_and_right">16dp</dimen>
+    <dimen name="scrollview_textview_eighth_activity_marginBottom">36dp</dimen>
+    <dimen name="scrollview_textview_eighth_activity_textSize">30sp</dimen>
+
+    <dimen name="scrollview_eighth_activity_marginTop_and_bottom">10dp</dimen>
+    <dimen name="scrollview_eighth_activity_marginStart_and_left">10dp</dimen>
+    <dimen name="scrollview_eighth_activity_marginEnd_and_right">10dp</dimen>
+
+    <dimen name="cardview_eighth_activity_layout_height">20dp</dimen>
+    <dimen name="cardview_eighth_activity_marginTop_and_bottom">24dp</dimen>
+
+    <dimen name="splashpage_textview_textSize">25sp</dimen>
+</resources>
