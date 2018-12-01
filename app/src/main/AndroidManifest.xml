@@ -24,25 +24,32 @@
         </activity>
         <activity
             android:name=".SecondActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".ThirdActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait"
+            android:parentActivityName=".SecondActivity"></activity>
         <activity
             android:name=".ForthActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ThirdActivity"></activity>
         <activity
             android:name=".FifthActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ForthActivity"></activity>
         <activity
             android:name=".SixthActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait"
+            android:parentActivityName=".FifthActivity"></activity>
         <activity
             android:name=".SeventhActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait"
+            android:parentActivityName=".SixthActivity"></activity>
         <activity
             android:name=".EighthActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait"
+            android:parentActivityName=".SeventhActivity"></activity>
     </application>
 
 </manifest>
