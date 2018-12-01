@@ -36,5 +36,6 @@
 
     <string name="splashpage_imageview_contentDescription">Dreams</string>
     <string name="splashpage_textview_text">Mad-Lib! What a Story!</string>
+    <string name="concatenated_message">So I wanted to tell a story about something but had no idea what to write about, so I decided to just make \'something\' up. Everyday I wake up thinking why is it <b>%s</b> already, then I realize that I am a whole day older today. I lay there and think about my <b>%s</b> and what the hell I am doing here. So I close my eyes and go right back to sleep. Dream time! Yaaaay! My favorite time of day. Jumping over <b>%s</b>   and flying through <b>%s</b>  , I realize how amazing dream-land can really be. Finding myself typing on a <b>%s</b> , click click click is all I hear. As he drinks his bottle and hums a rhythm. Hurry up and eat little boy, so I can get this <b>%s</b> done. Okay. Stop! Its play time. Time for mental release and <b>%s</b>   talk. I love these moments of time. Am I awake or still asleep? Not quite sure but time keeps flying and so do I.</string>
 
 </resources>
