@@ -5,6 +5,7 @@ import android.support.constraint.ConstraintLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,6 +15,8 @@ import java.util.Random;
 public class SecondActivity extends AppCompatActivity {
 
     private EditText mResponseEditText2;
+    private Button button;
+
     public static final String EXTRA_MESSAGE1 = "first_extra_message";
     public static final String EXTRA_MESSAGE2 = "second_extra_message";
     private String[] mColorArray = {"red", "pink", "purple", "deep_purple",
@@ -35,18 +38,18 @@ public class SecondActivity extends AppCompatActivity {
         ConstraintLayout layout = findViewById(R.id.second_activity);
         layout.setBackgroundColor(colorRes);
 
+        mResponseEditText2 = findViewById(R.id.editText2);
+        button = findViewById(R.id.button2);
+
         Intent intent2 = getIntent();
         final String message1 = intent2.getStringExtra(MainActivity.EXTRA_MESSAGE1);
 
-        Button button = findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mResponseEditText2 = findViewById(R.id.editText2);
-//                Typeface userInput2 = Typeface.defaultFromStyle(Typeface.BOLD);
-//                mResponseEditText2.setTypeface(userInput2);
+                String userResponse = mResponseEditText2.getText().toString();
 
-                if (mResponseEditText2.getText().toString().equals("")) {
+                if (TextUtils.isEmpty(userResponse)) {
                     Toast.makeText(v.getContext(), "Enter Response", Toast.LENGTH_SHORT).show();
                 }else {
                     String userInput = mResponseEditText2.getText().toString();

@@ -38,12 +38,13 @@ public class EighthActivity extends AppCompatActivity {
         String backgroundColor = mColorArray[random.nextInt(20)];
         int colorResourceName = getResources().getIdentifier(backgroundColor,
                 "color", getApplicationContext().getPackageName());
-        textView = findViewById(R.id.story_textView);
-        emailEditText8 = findViewById(R.id.editText8);
-        button = findViewById(R.id.button8);
         layout = findViewById(R.id.eighth_activity);
         int colorRes = ContextCompat.getColor(this, colorResourceName);
         layout.setBackgroundColor(colorRes);
+
+        textView = findViewById(R.id.story_textView);
+        emailEditText8 = findViewById(R.id.editText8);
+        button = findViewById(R.id.button8);
 
         final String concatenatedMessage = getStrings();
 

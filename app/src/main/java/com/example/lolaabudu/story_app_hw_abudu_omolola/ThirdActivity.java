@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,6 +15,8 @@ import java.util.Random;
 public class ThirdActivity extends AppCompatActivity {
 
     private EditText mResponseEditText3;
+    private Button button;
+
     public static final String EXTRA_MESSAGE2 = "second_extra_message";
     public static final String EXTRA_MESSAGE1 = "first_extra_message";
     public static final String EXTRA_MESSAGE3 = "third_extra_message";
@@ -36,18 +39,20 @@ public class ThirdActivity extends AppCompatActivity {
         ConstraintLayout layout = findViewById(R.id.third_activity);
         layout.setBackgroundColor(colorRes);
 
+        mResponseEditText3 = findViewById(R.id.editText3);
+        button = findViewById(R.id.button3);
+
         Intent intent3 = getIntent();
         final String message1 = intent3.getStringExtra(SecondActivity.EXTRA_MESSAGE1);
         final String message2 = intent3.getStringExtra(SecondActivity.EXTRA_MESSAGE2);
 
 
-        Button button = findViewById(R.id.button3);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mResponseEditText3 = findViewById(R.id.editText3);
 
-                if (mResponseEditText3.getText().toString().equals("")) {
+                String userResponse = mResponseEditText3.getText().toString();
+                if (TextUtils.isEmpty(userResponse)) {
                     Toast.makeText(v.getContext(), "Enter Response", Toast.LENGTH_SHORT).show();
                 }else {
                     String userInput = mResponseEditText3.getText().toString();

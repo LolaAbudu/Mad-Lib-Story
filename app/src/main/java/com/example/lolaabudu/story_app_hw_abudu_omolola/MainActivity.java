@@ -6,6 +6,7 @@ import android.support.constraint.ConstraintLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,6 +16,7 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     private EditText mResponseEditText;
+    private Button button;
 
     public static final String EXTRA_MESSAGE1 = "first_extra_message";
 
@@ -39,16 +41,16 @@ public class MainActivity extends AppCompatActivity {
         ConstraintLayout layout = findViewById(R.id.main_activity);
         layout.setBackgroundColor(colorRes);
 
+        mResponseEditText = findViewById(R.id.editText);
+        button = findViewById(R.id.button);
 
-        //this is how you create an onclick listener and make the button go from one the main class to second activity
-        Button button = findViewById(R.id.button);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mResponseEditText = findViewById(R.id.editText);
-                mResponseEditText.setTypeface(null, Typeface.BOLD);
+                String userResponse = mResponseEditText.getText().toString();
 
-                if (mResponseEditText.getText().toString().equals("")) {
+                if (TextUtils.isEmpty(userResponse)) {
                     Toast.makeText(v.getContext(), "Enter Response", Toast.LENGTH_SHORT).show();
                 }else {
                     String userInput = mResponseEditText.getText().toString();

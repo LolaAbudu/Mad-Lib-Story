@@ -33,4 +33,6 @@
     <dimen name="cardview_eighth_activity_marginTop_and_bottom">24dp</dimen>
 
     <dimen name="splashpage_textview_textSize">25sp</dimen>
+    <dimen name="cardview_cardCornerRadius">8dp</dimen>
+    <dimen name="cardview_cardElevation">4dp</dimen>
 </resources>

@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.constraint.ConstraintLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,6 +16,8 @@ import java.util.Random;
 public class SeventhActivity extends AppCompatActivity {
 
     private EditText mResponseEditText7;
+    private Button button;
+
     public static final String EXTRA_MESSAGE1 = "first_extra_message";
     public static final String EXTRA_MESSAGE2 = "second_extra_message";
     public static final String EXTRA_MESSAGE3 = "third_extra_message";
@@ -41,6 +44,9 @@ public class SeventhActivity extends AppCompatActivity {
         ConstraintLayout layout = findViewById(R.id.seventh_activity);
         layout.setBackgroundColor(colorRes);
 
+        mResponseEditText7 = findViewById(R.id.editText7);
+        button = findViewById(R.id.button7);
+
         Intent intent = getIntent();
         final String message1 = intent.getStringExtra(SixthActivity.EXTRA_MESSAGE1);
         final String message2 = intent.getStringExtra(SixthActivity.EXTRA_MESSAGE2);
@@ -50,13 +56,13 @@ public class SeventhActivity extends AppCompatActivity {
         final String message6 = intent.getStringExtra(SixthActivity.EXTRA_MESSAGE6);
 
 
-        Button button = findViewById(R.id.button7);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mResponseEditText7 = findViewById(R.id.editText7);
 
-                if (mResponseEditText7.getText().toString().equals("")) {
+                String userResponse = mResponseEditText7.getText().toString();
+
+                if (TextUtils.isEmpty(userResponse)) {
                     Toast.makeText(v.getContext(), "Enter Response", Toast.LENGTH_SHORT).show();
                 }else {
                     String userInput = mResponseEditText7.getText().toString();
